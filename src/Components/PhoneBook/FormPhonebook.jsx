@@ -2,7 +2,7 @@ import shortid from "shortid";
 import { Component } from "react";
 import styles from "./FormPhonebook.module.css";
 import { connect } from "react-redux";
-import {addContact} from "../../Redux/Phone/options";
+import { addContact } from "../../Redux/Phone/options";
 class FormPhonebook extends Component {
   state = {
     name: "",
@@ -80,8 +80,7 @@ const mapStateToProps = ({ contacts: { items } }) => {
 };
 const mapDispatchToProps = (dispatch) => {
   return {
-    onSubmit: ({ name, number }) =>
-      dispatch(addContact({ name, number })),
+    onSubmit: ({ name, number }) => dispatch(addContact({ name, number })),
   };
 };
 export default connect(mapStateToProps, mapDispatchToProps)(FormPhonebook);

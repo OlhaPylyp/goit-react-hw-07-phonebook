@@ -32,7 +32,7 @@ const middleware = [
 
 const store = configureStore({
   reducer: {
-    contacts:contactsReducer,
+    contacts: contactsReducer,
   },
   middleware,
   devTools: process.env.NODE_ENV === "development",

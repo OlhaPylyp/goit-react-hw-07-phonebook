@@ -1,12 +1,10 @@
 import { Component } from "react";
 import "./App.css";
-import shortid from "shortid";
 import FormPhonebook from "./Components/PhoneBook";
 import ContactItem from "./Components/ContactItem";
 import Filter from "./Components/Filter";
 import Section from "./Components/Section";
 import { connect } from "react-redux";
-import store from "./Redux/store";
 import {getContact}  from "./Redux/Phone/options"
 
 function App () {

@@ -1,7 +1,7 @@
 import styles from "./ContactItem.module.css";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
-import {deleteContact} from "../../Redux/Phone/options";
+import { deleteContact } from "../../Redux/Phone/options";
 
 const ContactItem = ({ onDeleteContact, contacts }) => (
   <div>
