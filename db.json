@@ -1,0 +1,34 @@
+{
+  "contacts": [
+    {
+      "id": 1,
+      "name": "Olha",
+      "number": "+380669886995"
+    },
+    {
+      "name": "Taras Shevchenko National University of Kyiv",
+      "number": "123456789009",
+      "id": 2
+    },
+    {
+      "name": "Taras Shevchenko National University of Kyiv",
+      "number": "123456789009",
+      "id": 4
+    },
+    {
+      "name": "Olha",
+      "number": "123456789009",
+      "id": 5
+    },
+    {
+      "name": "gfhg",
+      "number": "123456789009",
+      "id": 6
+    },
+    {
+      "name": "dfffh",
+      "number": "123456789009",
+      "id": 7
+    }
+  ]
+}
