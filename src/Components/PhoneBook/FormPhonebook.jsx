@@ -2,7 +2,7 @@ import shortid from "shortid";
 import { Component } from "react";
 import styles from "./FormPhonebook.module.css";
 import { connect } from "react-redux";
-import { addContact } from "../../Redux/Phone/options";
+import { addContact } from "../../Redux/Phone/operationApi";
 class FormPhonebook extends Component {
   state = {
     name: "",
