@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+
 import styles from "./Filter.module.css";
 import { connect } from "react-redux";
 import * as actions from "../../Redux/Phone/phone-actions";

@@ -36,6 +36,7 @@ class FormPhonebook extends Component {
   };
 
   render() {
+    console.log("re-render")
     return (
       <div className={styles.form_container}>
         <form className={styles.form} onSubmit={this.handleSubmit}>
