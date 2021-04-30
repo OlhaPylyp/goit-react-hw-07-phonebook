@@ -1,74 +1,14 @@
 {
   "contacts": [
     {
-      "id": 1,
       "name": "Olha",
-      "number": "+380669886995"
+      "number": "123456789009",
+      "id": 1
     },
     {
       "name": "Taras Shevchenko National University of Kyiv",
       "number": "123456789009",
       "id": 2
-    },
-    {
-      "name": "Taras Shevchenko National University of Kyiv",
-      "number": "123456789009",
-      "id": 4
-    },
-    {
-      "name": "Olha",
-      "number": "123456789009",
-      "id": 5
-    },
-    {
-      "name": "gfhg",
-      "number": "123456789009",
-      "id": 6
-    },
-    {
-      "name": "dfffh",
-      "number": "123456789009",
-      "id": 7
-    },
-    {
-      "name": "Olha",
-      "number": "123456789009",
-      "id": 8
-    },
-    {
-      "name": "Olha",
-      "number": "123456789009",
-      "id": 9
-    },
-    {
-      "name": "Taras Shevchenko National University of Kyiv",
-      "number": "123456789009",
-      "id": 10
-    },
-    {
-      "name": "Olha",
-      "number": "123456789009",
-      "id": 11
-    },
-    {
-      "name": "Taras Shevchenko National University of Kyiv",
-      "number": "123456789009",
-      "id": 13
-    },
-    {
-      "name": "Olha",
-      "number": "123456789009",
-      "id": 14
-    },
-    {
-      "name": "Olha",
-      "number": "123456789009",
-      "id": 15
-    },
-    {
-      "name": "Olha",
-      "number": "123456789009",
-      "id": 17
     }
   ]
 }

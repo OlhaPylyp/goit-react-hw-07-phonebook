@@ -12,6 +12,9 @@ import {getLoading} from "./Redux/Phone/phone_selector"
 
 class App extends Component {
   // function App () 
+  componentDidMount() {
+    this.props.getContacts();
+  }
   render() {
   return (
     <div>
