@@ -1,17 +1,22 @@
 import { Component } from "react";
 import "./App.css";
+import LinearProgress from '@material-ui/core/LinearProgress';
 import FormPhonebook from "./Components/PhoneBook";
 import ContactItem from "./Components/ContactItem";
 import Filter from "./Components/Filter";
 import Section from "./Components/Section";
 import { connect } from "react-redux";
-import {getContact}  from "./Redux/Phone/options"
+import {getContact}  from "./Redux/Phone/operationApi"
+import {getLoading} from "./Redux/Phone/phone_selector"
 
-function App () {
+
+class App extends Component {
+  // function App () 
+  render() {
   return (
     <div>
       <Section title="Phonebook">
-      {this.pros.isLoading && <h1>Загружаем...</h1>}
+      {this.props.isLoading &&  <LinearProgress color="secondary" />}
         <FormPhonebook />
      
       </Section>
@@ -21,11 +26,11 @@ function App () {
       </Section>
     </div>
   );
-}
+}}
 
 
 const mapStateToProps = state => ({
-  isLoading: state.contacts.loading,
+  isLoading: getLoading(state),
 });
 
 const mapDispatchToProps = dispatch => ({

@@ -1,7 +1,8 @@
 import styles from "./ContactItem.module.css";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
-import { deleteContact } from "../../Redux/Phone/options";
+import { deleteContact } from "../../Redux/Phone/operationApi";
+import { getUniqContact } from "../../Redux/Phone/phone_selector";
 
 const ContactItem = ({ onDeleteContact, contacts }) => (
   <div>
@@ -36,14 +37,9 @@ ContactItem.propTypes = {
     })
   ).isRequired,
 };
-const getFilter = (allContacts, filter) => {
-  const normalizedFilter = filter.toLowerCase();
-  return allContacts.filter(({ name }) =>
-    name.toLowerCase().includes(normalizedFilter)
-  );
-};
-const mapStateToProps = ({ contacts: { items, filter } }) => ({
-  contacts: getFilter(items, filter),
+
+const mapStateToProps = state => ({
+  contacts: getUniqContact(state),
 });
 const mapDispatchToProps = (dispatch) => {
   return {

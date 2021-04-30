@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.11.4",
+    "@material/linear-progress": "^11.0.0",
     "@reduxjs/toolkit": "^1.5.1",
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.6",
@@ -18,6 +20,7 @@
     "redux": "^4.0.5",
     "redux-logger": "^3.0.6",
     "redux-persist": "^6.0.0",
+    "reselect": "^4.0.0",
     "save": "^2.4.0",
     "shortid": "^2.2.16",
     "web-vitals": "^1.1.1"
@@ -27,7 +30,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "api-server": "json-server --port 4040 --delay 300 --watch db.json",
+    "server": "json-server --port 4040 --delay 300 --watch db.json",
     "predeploy": "npm run build",
     "deploy": "netlify deploy -p"
   },

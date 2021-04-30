@@ -1,0 +1,12 @@
+export const getLoading = (state) => state.contacts.loading;
+export const getFilter = (state) => state.contacts.filter;
+export const getAllContacts = (state) => state.contacts.items;
+export const getUniqContact = (state) => {
+  const filter = getFilter(state);
+  const normalizedFilter = filter.toLowerCase();
+  const allContacts = getAllContacts(state);
+  return allContacts.filter(({ name }) =>
+    name.toLowerCase().includes(normalizedFilter)
+  );
+};
+// export const getItems= state=>state.contacts

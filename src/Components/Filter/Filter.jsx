@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import styles from "./Filter.module.css";
 import { connect } from "react-redux";
 import * as actions from "../../Redux/Phone/phone-actions";
+import {getFilter} from "../../Redux/Phone/phone_selector"
 
 const Filter = ({ value, onChange }) => (
   <div className={styles.container}>
@@ -22,7 +23,7 @@ Filter.propTypes = {
 };
 
 const mapStateToProps = (state, props) => {
-  return { value: state.contacts.filter };
+  return { value: getFilter(state) };
 };
 
 const mapDispatchToProps = (dispatch) => {
